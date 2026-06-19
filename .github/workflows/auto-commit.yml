@@ -1,0 +1,52 @@
+name: Daily Random Sequential Auto Commit
+
+on:
+  schedule:
+    - cron: '17 10 * * 1-4,6'
+  workflow_dispatch: 
+
+permissions:
+  contents: write
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        persist-credentials: false 
+
+    - name: Generate Random Sequential Commits
+      run: |
+        if [ -f counter.txt ]; then
+          START_NUM=$(cat counter.txt)
+        else
+          START_NUM=0
+        fi
+
+        MIN_COMMITS=3
+        MAX_COMMITS=17
+        NUM_COMMITS=$(( ( RANDOM % (MAX_COMMITS - MIN_COMMITS + 1) ) + MIN_COMMITS ))
+        
+        echo "Today's random selection: Will generate $NUM_COMMITS sequential commits."
+
+        git config --local user.email "barihamza73@gmail.com"
+        git config --local user.name "hamza bari"
+
+        for i in $(seq 1 $NUM_COMMITS)
+        do
+          CURRENT_NUM=$((START_NUM + i))
+          echo $CURRENT_NUM > counter.txt
+          git add counter.txt
+          git commit -m "chore: automated commit #$CURRENT_NUM"
+        done
+
+    - name: Authenticate and Push changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.AUTO_COMMIT_KEY }}
+      run: |
+        # Use the token explicitly in the remote URL to bypass exit code 128
+        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+        git pull --rebase origin main
+        git push origin main
