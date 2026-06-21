@@ -1,0 +1,64 @@
+feat(html): add semantic landmark elements for better accessibility
+fix(css): resolve flexbox overflow issue on small viewports
+style(tailwind): tune spacing scale for tighter mobile layout
+refactor(js): extract reusable debounce utility for event handlers
+docs(readme): document front-end stack and design principles
+feat(css): add responsive grid layout for project showcase
+fix(html): correct heading hierarchy on landing page
+style(tailwind): swap custom colors for theme tokens
+perf(js): memoize expensive selector queries in DOM helpers
+feat(js): implement theme toggle with localStorage persistence
+fix(css): fix sticky header z-index conflict with modals
+chore(tailwind): purge unused utility classes from build
+refactor(html): split monolithic markup into partials
+feat(js): add intersection observer for scroll-triggered animations
+fix(tailwind): resolve dark mode contrast issues on buttons
+style(css): polish hover transitions for interactive cards
+perf(html): defer non-critical script loading for faster paint
+feat(css): implement fluid typography with clamp()
+fix(js): patch event listener leak in component teardown
+chore(html): remove deprecated inline event handlers
+feat(tailwind): configure custom plugin for glassmorphism effect
+fix(css): smooth out animation jank during route transitions
+refactor(js): migrate callbacks to async/await in fetch helpers
+docs(js): add JSDoc comments to utility functions
+feat(html): wire up skip-to-content link for keyboard users
+style(tailwind): refine focus ring for accessibility compliance
+fix(js): handle null state gracefully in form validation
+perf(css): reduce layout thrash with contain property
+feat(css): add prefers-reduced-motion fallbacks for animations
+chore(js): update dependencies to latest stable versions
+fix(html): escape user input to prevent XSS in templates
+feat(tailwind): build responsive navbar with mobile drawer
+refactor(css): organize styles into layered architecture
+feat(js): implement client-side search with fuzzy matching
+fix(tailwind): align icon sizes with type scale
+style(html): improve form label associations for screen readers
+perf(js): lazy load images with native loading attribute
+feat(css): add custom scrollbar styling for webkit browsers
+fix(js): resolve race condition in async data fetcher
+chore(tailwind): configure content paths for JIT compilation
+refactor(html): convert div soup to semantic sectioning
+feat(js): add keyboard shortcuts for power users
+fix(css): fix iOS Safari 100vh bug with dynamic viewport units
+style(tailwind): experiment with new gradient utilities
+feat(css): implement dark mode with CSS custom properties
+fix(js): debounce resize handler to avoid layout recalcs
+perf(html): inline critical CSS for above-the-fold content
+chore(css): split monolithic stylesheet into modules
+feat(tailwind): design custom card component with shadow scale
+fix(html): add aria-labels to icon-only buttons
+refactor(js): extract stateful logic into custom hook
+feat(css): build animated underline effect for nav links
+style(js): clean up console logs and debug statements
+fix(tailwind): fix broken hover state on disabled buttons
+perf(css): optimize selector performance for large DOM trees
+feat(html): embed open graph meta tags for social sharing
+fix(js): patch off-by-one error in pagination logic
+chore(html): validate markup with htmlhint in CI
+feat(css): add smooth scroll behavior with offset for sticky header
+refactor(tailwind): extract repeated patterns into component classes
+feat(js): build toast notification system from scratch
+fix(css): resolve subpixel rendering bug on retina displays
+style(html): tighten line-height for better reading rhythm
+chore(js): configure eslint with airbnb base style guide
