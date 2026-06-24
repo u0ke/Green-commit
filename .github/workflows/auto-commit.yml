@@ -1,9 +1,9 @@
-name: Daily Random Sequential Auto Commit
+name: Daily Random Auto Commit
 
 on:
   schedule:
     - cron: '17 10 * * 1-4,6'
-  workflow_dispatch: 
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -11,42 +11,48 @@ permissions:
 jobs:
   commit:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        persist-credentials: false 
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
 
-    - name: Generate Random Sequential Commits
-      run: |
-        if [ -f counter.txt ]; then
-          START_NUM=$(cat counter.txt)
-        else
-          START_NUM=0
-        fi
+      - name: Configure Git
+        run: |
+          git config --global user.name "hamza bari"
+          git config --global user.email "barihamza73@gmail.com"
 
-        MIN_COMMITS=3
-        MAX_COMMITS=17
-        NUM_COMMITS=$(( ( RANDOM % (MAX_COMMITS - MIN_COMMITS + 1) ) + MIN_COMMITS ))
-        
-        echo "Today's random selection: Will generate $NUM_COMMITS sequential commits."
+      - name: Generate Random Commits
+        run: |
+          MIN_COMMITS=3
+          MAX_COMMITS=17
 
-        git config --local user.email "barihamza73@gmail.com"
-        git config --local user.name "hamza bari"
+          NUM_COMMITS=$((RANDOM % (MAX_COMMITS - MIN_COMMITS + 1) + MIN_COMMITS))
 
-        for i in $(seq 1 $NUM_COMMITS)
-        do
-          CURRENT_NUM=$((START_NUM + i))
-          echo $CURRENT_NUM > counter.txt
-          git add counter.txt
-          git commit -m "chore: automated commit #$CURRENT_NUM"
-        done
+          echo "Creating $NUM_COMMITS commits"
 
-    - name: Authenticate and Push changes
-      env:
-        GITHUB_TOKEN: ${{ secrets.AUTO_COMMIT_KEY }}
-      run: |
-        # Use the token explicitly in the remote URL to bypass exit code 128
-        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
-        git pull --rebase origin main
-        git push origin main
+          if [ ! -f messages.txt ]; then
+            echo "messages.txt not found!"
+            exit 1
+          fi
+          
+          shuf messages.txt | head -n $NUM_COMMITS > selected_messages.txt
+
+          while IFS= read -r COMMIT_MESSAGE
+          do
+            echo "$(date '+%Y-%m-%d %H:%M:%S') - $COMMIT_MESSAGE" >> commits-log.md
+
+            git add commits-log.md
+            git commit -m "$COMMIT_MESSAGE"
+          done < selected_messages.txt
+
+      - name: Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.AUTO_COMMIT_KEY }}
+        run: |
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+
+          git pull --rebase origin main
+          git push origin main
