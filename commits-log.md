@@ -6,3 +6,4 @@
 2026-06-25 12:32:51 - perf(js): lazy load images with native loading attribute
 2026-06-25 12:32:51 - chore(js): configure eslint with airbnb base style guide
 2026-06-25 12:32:51 - chore(html): remove deprecated inline event handlers
+2026-06-25 12:32:51 - perf(html): defer non-critical script loading for faster paint
