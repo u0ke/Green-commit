@@ -10,3 +10,4 @@
 2026-06-25 12:32:51 - feat(css): implement dark mode with CSS custom properties
 2026-06-25 12:32:51 - chore(tailwind): purge unused utility classes from build
 2026-06-25 12:32:51 - chore(tailwind): configure content paths for JIT compilation
+2026-06-25 12:32:51 - refactor(tailwind): extract repeated patterns into component classes
