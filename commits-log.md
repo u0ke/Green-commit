@@ -9,3 +9,4 @@
 2026-06-25 12:32:51 - perf(html): defer non-critical script loading for faster paint
 2026-06-25 12:32:51 - feat(css): implement dark mode with CSS custom properties
 2026-06-25 12:32:51 - chore(tailwind): purge unused utility classes from build
+2026-06-25 12:32:51 - chore(tailwind): configure content paths for JIT compilation
