@@ -12,3 +12,4 @@
 2026-06-25 12:32:51 - chore(tailwind): configure content paths for JIT compilation
 2026-06-25 12:32:51 - refactor(tailwind): extract repeated patterns into component classes
 2026-06-25 12:32:52 - refactor(js): migrate callbacks to async/await in fetch helpers
+2026-06-25 12:32:52 - feat(css): build animated underline effect for nav links
