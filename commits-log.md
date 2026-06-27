@@ -14,3 +14,4 @@
 2026-06-25 12:32:52 - refactor(js): migrate callbacks to async/await in fetch helpers
 2026-06-25 12:32:52 - feat(css): build animated underline effect for nav links
 2026-06-25 12:32:52 - chore(html): validate markup with htmlhint in CI
+2026-06-27 11:45:19 - fix(tailwind): align icon sizes with type scale
