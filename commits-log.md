@@ -24,3 +24,4 @@
 2026-06-27 11:45:19 - fix(css): fix iOS Safari 100vh bug with dynamic viewport units
 2026-06-27 11:45:19 - style(tailwind): refine focus ring for accessibility compliance
 2026-06-27 11:45:19 - docs(readme): document front-end stack and design principles
+2026-06-27 11:45:19 - feat(css): add responsive grid layout for project showcase
