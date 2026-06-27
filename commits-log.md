@@ -22,3 +22,4 @@
 2026-06-27 11:45:19 - perf(html): inline critical CSS for above-the-fold content
 2026-06-27 11:45:19 - feat(css): add prefers-reduced-motion fallbacks for animations
 2026-06-27 11:45:19 - fix(css): fix iOS Safari 100vh bug with dynamic viewport units
+2026-06-27 11:45:19 - style(tailwind): refine focus ring for accessibility compliance
