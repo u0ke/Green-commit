@@ -20,3 +20,4 @@
 2026-06-27 11:45:19 - refactor(css): organize styles into layered architecture
 2026-06-27 11:45:19 - feat(js): implement client-side search with fuzzy matching
 2026-06-27 11:45:19 - perf(html): inline critical CSS for above-the-fold content
+2026-06-27 11:45:19 - feat(css): add prefers-reduced-motion fallbacks for animations
