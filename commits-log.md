@@ -17,3 +17,4 @@
 2026-06-27 11:45:19 - fix(tailwind): align icon sizes with type scale
 2026-06-27 11:45:19 - fix(tailwind): fix broken hover state on disabled buttons
 2026-06-27 11:45:19 - refactor(js): extract reusable debounce utility for event handlers
+2026-06-27 11:45:19 - refactor(css): organize styles into layered architecture
