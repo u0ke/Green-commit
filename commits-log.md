@@ -35,3 +35,4 @@
 2026-06-29 14:18:56 - feat(css): implement fluid typography with clamp()
 2026-06-29 14:18:56 - docs(readme): document front-end stack and design principles
 2026-06-29 14:18:56 - perf(css): reduce layout thrash with contain property
+2026-06-29 14:18:56 - fix(css): fix iOS Safari 100vh bug with dynamic viewport units
