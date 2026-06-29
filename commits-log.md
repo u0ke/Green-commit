@@ -31,3 +31,4 @@
 2026-06-29 14:18:56 - docs(js): add JSDoc comments to utility functions
 2026-06-29 14:18:56 - refactor(html): convert div soup to semantic sectioning
 2026-06-29 14:18:56 - chore(css): split monolithic stylesheet into modules
+2026-06-29 14:18:56 - style(html): improve form label associations for screen readers
