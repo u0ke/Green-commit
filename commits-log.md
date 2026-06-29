@@ -39,3 +39,4 @@
 2026-06-29 14:18:56 - perf(js): lazy load images with native loading attribute
 2026-06-29 14:18:56 - feat(html): wire up skip-to-content link for keyboard users
 2026-06-29 14:18:56 - feat(tailwind): build responsive navbar with mobile drawer
+2026-06-29 14:18:56 - feat(css): implement dark mode with CSS custom properties
