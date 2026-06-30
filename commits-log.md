@@ -49,3 +49,4 @@
 2026-06-30 12:23:32 - feat(js): add intersection observer for scroll-triggered animations
 2026-06-30 12:23:32 - feat(css): add smooth scroll behavior with offset for sticky header
 2026-06-30 12:23:32 - feat(css): implement fluid typography with clamp()
+2026-06-30 12:23:32 - fix(js): patch event listener leak in component teardown
