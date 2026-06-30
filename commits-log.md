@@ -40,3 +40,4 @@
 2026-06-29 14:18:56 - feat(html): wire up skip-to-content link for keyboard users
 2026-06-29 14:18:56 - feat(tailwind): build responsive navbar with mobile drawer
 2026-06-29 14:18:56 - feat(css): implement dark mode with CSS custom properties
+2026-06-30 12:23:32 - perf(css): optimize selector performance for large DOM trees
