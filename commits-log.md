@@ -48,3 +48,4 @@
 2026-06-30 12:23:32 - refactor(html): split monolithic markup into partials
 2026-06-30 12:23:32 - feat(js): add intersection observer for scroll-triggered animations
 2026-06-30 12:23:32 - feat(css): add smooth scroll behavior with offset for sticky header
+2026-06-30 12:23:32 - feat(css): implement fluid typography with clamp()
