@@ -53,3 +53,4 @@
 2026-06-30 12:23:32 - style(html): improve form label associations for screen readers
 2026-06-30 12:23:32 - perf(html): defer non-critical script loading for faster paint
 2026-06-30 12:23:32 - fix(tailwind): resolve dark mode contrast issues on buttons
+2026-06-30 12:23:32 - feat(tailwind): build responsive navbar with mobile drawer
