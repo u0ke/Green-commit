@@ -45,3 +45,4 @@
 2026-06-30 12:23:32 - feat(js): build toast notification system from scratch
 2026-06-30 12:23:32 - feat(js): add keyboard shortcuts for power users
 2026-06-30 12:23:32 - fix(css): smooth out animation jank during route transitions
+2026-06-30 12:23:32 - refactor(html): split monolithic markup into partials
