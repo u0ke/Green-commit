@@ -55,3 +55,4 @@
 2026-06-30 12:23:32 - fix(tailwind): resolve dark mode contrast issues on buttons
 2026-06-30 12:23:32 - feat(tailwind): build responsive navbar with mobile drawer
 2026-06-30 12:23:32 - style(tailwind): swap custom colors for theme tokens
+2026-06-30 12:23:32 - fix(css): fix iOS Safari 100vh bug with dynamic viewport units
