@@ -47,3 +47,4 @@
 2026-06-30 12:23:32 - fix(css): smooth out animation jank during route transitions
 2026-06-30 12:23:32 - refactor(html): split monolithic markup into partials
 2026-06-30 12:23:32 - feat(js): add intersection observer for scroll-triggered animations
+2026-06-30 12:23:32 - feat(css): add smooth scroll behavior with offset for sticky header
