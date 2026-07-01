@@ -57,3 +57,4 @@
 2026-06-30 12:23:32 - style(tailwind): swap custom colors for theme tokens
 2026-06-30 12:23:32 - fix(css): fix iOS Safari 100vh bug with dynamic viewport units
 2026-07-01 12:46:40 - feat(html): add semantic landmark elements for better accessibility
+2026-07-01 12:46:40 - perf(js): lazy load images with native loading attribute
