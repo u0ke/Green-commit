@@ -72,3 +72,4 @@
 2026-07-02 12:20:40 - refactor(js): extract reusable debounce utility for event handlers
 2026-07-02 12:20:40 - refactor(js): migrate callbacks to async/await in fetch helpers
 2026-07-02 12:20:40 - chore(tailwind): purge unused utility classes from build
+2026-07-02 12:20:40 - fix(js): patch off-by-one error in pagination logic
