@@ -71,3 +71,4 @@
 2026-07-02 12:20:40 - style(tailwind): experiment with new gradient utilities
 2026-07-02 12:20:40 - refactor(js): extract reusable debounce utility for event handlers
 2026-07-02 12:20:40 - refactor(js): migrate callbacks to async/await in fetch helpers
+2026-07-02 12:20:40 - chore(tailwind): purge unused utility classes from build
