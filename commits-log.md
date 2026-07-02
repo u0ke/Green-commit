@@ -66,3 +66,4 @@
 2026-07-02 12:20:40 - chore(js): configure eslint with airbnb base style guide
 2026-07-02 12:20:40 - feat(html): add semantic landmark elements for better accessibility
 2026-07-02 12:20:40 - feat(html): embed open graph meta tags for social sharing
+2026-07-02 12:20:40 - chore(tailwind): configure content paths for JIT compilation
