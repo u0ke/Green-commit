@@ -69,3 +69,4 @@
 2026-07-02 12:20:40 - chore(tailwind): configure content paths for JIT compilation
 2026-07-02 12:20:40 - fix(js): debounce resize handler to avoid layout recalcs
 2026-07-02 12:20:40 - style(tailwind): experiment with new gradient utilities
+2026-07-02 12:20:40 - refactor(js): extract reusable debounce utility for event handlers
