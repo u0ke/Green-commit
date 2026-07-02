@@ -62,3 +62,4 @@
 2026-07-02 12:20:40 - fix(css): fix iOS Safari 100vh bug with dynamic viewport units
 2026-07-02 12:20:40 - style(tailwind): refine focus ring for accessibility compliance
 2026-07-02 12:20:40 - perf(css): reduce layout thrash with contain property
+2026-07-02 12:20:40 - feat(js): implement theme toggle with localStorage persistence
