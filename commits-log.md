@@ -68,3 +68,4 @@
 2026-07-02 12:20:40 - feat(html): embed open graph meta tags for social sharing
 2026-07-02 12:20:40 - chore(tailwind): configure content paths for JIT compilation
 2026-07-02 12:20:40 - fix(js): debounce resize handler to avoid layout recalcs
+2026-07-02 12:20:40 - style(tailwind): experiment with new gradient utilities
