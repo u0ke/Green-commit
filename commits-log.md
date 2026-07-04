@@ -76,3 +76,4 @@
 2026-07-04 11:45:16 - style(tailwind): swap custom colors for theme tokens
 2026-07-04 11:45:16 - chore(tailwind): purge unused utility classes from build
 2026-07-04 11:45:16 - feat(js): implement theme toggle with localStorage persistence
+2026-07-04 11:45:16 - style(html): tighten line-height for better reading rhythm
