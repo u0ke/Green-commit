@@ -86,3 +86,4 @@
 2026-07-04 11:45:16 - feat(css): implement dark mode with CSS custom properties
 2026-07-04 11:45:16 - feat(css): implement fluid typography with clamp()
 2026-07-04 11:45:16 - feat(css): add responsive grid layout for project showcase
+2026-07-04 11:45:16 - feat(css): add prefers-reduced-motion fallbacks for animations
