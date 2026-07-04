@@ -78,3 +78,4 @@
 2026-07-04 11:45:16 - feat(js): implement theme toggle with localStorage persistence
 2026-07-04 11:45:16 - style(html): tighten line-height for better reading rhythm
 2026-07-04 11:45:16 - perf(css): reduce layout thrash with contain property
+2026-07-04 11:45:16 - chore(html): remove deprecated inline event handlers
