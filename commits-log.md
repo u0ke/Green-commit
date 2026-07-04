@@ -81,3 +81,4 @@
 2026-07-04 11:45:16 - chore(html): remove deprecated inline event handlers
 2026-07-04 11:45:16 - chore(css): split monolithic stylesheet into modules
 2026-07-04 11:45:16 - refactor(html): convert div soup to semantic sectioning
+2026-07-04 11:45:16 - feat(tailwind): configure custom plugin for glassmorphism effect
