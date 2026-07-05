@@ -2,7 +2,7 @@ name: Daily Random Auto Commit
 
 on:
   schedule:
-    - cron: '17 10 * * 1-4,6'
+    - cron: '17 10 * * *'  # Runs every day at 10:17 AM UTC
   workflow_dispatch:
 
 permissions:
@@ -19,12 +19,44 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
 
+      - name: Check if today is a run day
+        id: check
+        run: |
+          WEEK=$(date +%V)
+          YEAR=$(date +%Y)
+          TODAY=$(date +%u)  # 1 = Monday ... 7 = Sunday
+
+          # Create a hash from the current year+week so the "random" days
+          # change every week but stay consistent across the week
+          HASH=$(printf '%s' "$YEAR-$WEEK" | sha256sum | cut -d' ' -f1)
+
+          # Randomly decide how many days this week: 4, 5, or 6
+          NUM_DAYS=$((0x$(printf '%s' "$HASH" | cut -c1-2) % 3 + 4))
+
+          # Pull that many unique days (1-7) out of the hash
+          RUN_DAYS=$(printf '%s' "$HASH" | fold -w2 | while read -r hex; do
+            echo $((0x$hex % 7 + 1))
+          done | sort -u | head -n "$NUM_DAYS" | paste -sd ',' -)
+
+          echo "Week $YEAR-W$WEEK: $NUM_DAYS run days scheduled ($RUN_DAYS)"
+          echo "Today is day $TODAY"
+
+          if [[ ",$RUN_DAYS," == *",$TODAY,"* ]]; then
+            echo "Today is a run day."
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Today is NOT a run day. Skipping."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Configure Git
+        if: github.event_name == 'workflow_dispatch' || steps.check.outputs.run == 'true'
         run: |
           git config --global user.name "hamza bari"
           git config --global user.email "barihamza73@gmail.com"
 
       - name: Generate Random Commits
+        if: github.event_name == 'workflow_dispatch' || steps.check.outputs.run == 'true'
         run: |
           MIN_COMMITS=3
           MAX_COMMITS=17
@@ -49,6 +81,7 @@ jobs:
           done < selected_messages.txt
 
       - name: Push Changes
+        if: github.event_name == 'workflow_dispatch' || steps.check.outputs.run == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.AUTO_COMMIT_KEY }}
         run: |
