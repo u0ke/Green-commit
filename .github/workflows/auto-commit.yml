@@ -58,8 +58,8 @@ jobs:
       - name: Generate Random Commits
         if: github.event_name == 'workflow_dispatch' || steps.check.outputs.run == 'true'
         run: |
-          MIN_COMMITS=3
-          MAX_COMMITS=17
+          MIN_COMMITS=2
+          MAX_COMMITS=9
 
           NUM_COMMITS=$((RANDOM % (MAX_COMMITS - MIN_COMMITS + 1) + MIN_COMMITS))
 
