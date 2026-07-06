@@ -89,3 +89,4 @@
 2026-07-04 11:45:16 - feat(css): add prefers-reduced-motion fallbacks for animations
 2026-07-04 11:45:16 - docs(js): add JSDoc comments to utility functions
 2026-07-06 14:02:12 - feat(css): add smooth scroll behavior with offset for sticky header
+2026-07-06 14:02:12 - refactor(css): organize styles into layered architecture
