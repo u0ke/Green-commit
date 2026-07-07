@@ -96,3 +96,4 @@
 2026-07-07 12:38:23 - fix(js): resolve race condition in async data fetcher
 2026-07-07 12:38:23 - style(js): clean up console logs and debug statements
 2026-07-07 12:38:23 - fix(js): debounce resize handler to avoid layout recalcs
+2026-07-07 12:38:23 - chore(js): configure eslint with airbnb base style guide
