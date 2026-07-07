@@ -91,3 +91,4 @@
 2026-07-06 14:02:12 - feat(css): add smooth scroll behavior with offset for sticky header
 2026-07-06 14:02:12 - refactor(css): organize styles into layered architecture
 2026-07-07 12:38:23 - fix(html): correct heading hierarchy on landing page
+2026-07-07 12:38:23 - fix(css): fix sticky header z-index conflict with modals
