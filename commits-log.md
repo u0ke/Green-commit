@@ -93,3 +93,4 @@
 2026-07-07 12:38:23 - fix(html): correct heading hierarchy on landing page
 2026-07-07 12:38:23 - fix(css): fix sticky header z-index conflict with modals
 2026-07-07 12:38:23 - feat(html): wire up skip-to-content link for keyboard users
+2026-07-07 12:38:23 - fix(js): resolve race condition in async data fetcher
