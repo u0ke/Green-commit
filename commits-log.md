@@ -98,3 +98,4 @@
 2026-07-07 12:38:23 - fix(js): debounce resize handler to avoid layout recalcs
 2026-07-07 12:38:23 - chore(js): configure eslint with airbnb base style guide
 2026-07-07 12:38:23 - feat(js): add keyboard shortcuts for power users
+2026-07-08 11:56:48 - chore(tailwind): configure content paths for JIT compilation
