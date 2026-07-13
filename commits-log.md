@@ -101,3 +101,4 @@
 2026-07-08 11:56:48 - chore(tailwind): configure content paths for JIT compilation
 2026-07-08 11:56:48 - feat(tailwind): design custom card component with shadow scale
 2026-07-13 12:41:42 - fix(js): handle null state gracefully in form validation
+2026-07-13 12:41:42 - perf(html): inline critical CSS for above-the-fold content
