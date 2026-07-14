@@ -109,3 +109,4 @@
 2026-07-13 12:41:42 - refactor(js): extract stateful logic into custom hook
 2026-07-13 12:41:42 - fix(js): debounce resize handler to avoid layout recalcs
 2026-07-14 11:43:18 - feat(css): add custom scrollbar styling for webkit browsers
+2026-07-14 11:43:18 - fix(js): handle null state gracefully in form validation
