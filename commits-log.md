@@ -113,3 +113,4 @@
 2026-07-15 11:46:57 - perf(html): defer non-critical script loading for faster paint
 2026-07-15 11:46:57 - chore(js): update dependencies to latest stable versions
 2026-07-15 11:46:57 - refactor(js): extract stateful logic into custom hook
+2026-07-15 11:46:57 - fix(css): fix iOS Safari 100vh bug with dynamic viewport units
