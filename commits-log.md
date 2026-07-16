@@ -114,3 +114,4 @@
 2026-07-15 11:46:57 - chore(js): update dependencies to latest stable versions
 2026-07-15 11:46:57 - refactor(js): extract stateful logic into custom hook
 2026-07-15 11:46:57 - fix(css): fix iOS Safari 100vh bug with dynamic viewport units
+2026-07-16 11:52:56 - fix(js): handle null state gracefully in form validation
