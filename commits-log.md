@@ -121,3 +121,4 @@
 2026-09-15 00:30:02 - feat(html): embed open graph meta tags for social sharing
 2026-09-15 00:30:02 - feat(css): add prefers-reduced-motion fallbacks for animations
 2026-09-15 15:02:17 - fix(js): handle null state gracefully in form validation
+2026-09-15 15:02:17 - refactor(js): extract reusable debounce utility for event handlers
