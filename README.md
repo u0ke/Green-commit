@@ -1,22 +1,9 @@
-# Hi there, I'm Hamza!  👋
+<div align="center">
 
-### AKA <font size="6">🧊 ice!</font>
+<img src="./Music Video Acid GIF by Refresh Records.gif" width="100%">
 
-Welcome to my daily hub! I'm a passionate Front-End Developer and Graphic Designer who loves building clean, interactive web experiences and pushing creative boundaries. When I'm not crafting code, you can usually find me riding the waves or fighting for a win in my favorite competitive games.
+# Hey I am Hamza
 
----
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00C2FF&center=true&vCenter=true&width=500&lines=Web+Developer+%F0%9F%92%BB;Game+Developer+%F0%9F%8E%AE;Minecraft+Modder+%F0%9F%8C%B4" />
 
-## 🌊 About Me
-
-* **💻 Tech Exploration:** I specialize in front-end development, building slick, responsive user interfaces with modern web tech. 
-* **🏄‍♂️ Ocean & Fitness:** Huge fan of bodyboarding, swimming, and hitting the gym. There's nothing like taking a break from screen time to look at the swell conditions and catch some waves.
-* **🎮 Gamer:** Competitive at heart. Whether it's climbing ranks in *Valorant*, surviving in *Rust*, or diving into deep action-RPGs like *Black Myth: Wukong*, gaming is my go-to sandbox.
-
----
-
-## 🚀 Skills & Interests
-* **Front-End Development:** HTML5, CSS3, Tailwind CSS, JavaScript (DOM manipulation & interactive features)
-* **Design:** UI/UX Concepts & Graphic Design
-* **Tools:** VS Code, Git, GitHub Actions
-
-*"Every day is a new experiment."* ⚡
+</div>
