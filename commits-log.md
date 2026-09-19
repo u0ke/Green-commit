@@ -128,3 +128,4 @@
 2026-09-16 14:59:36 - refactor(js): extract reusable debounce utility for event handlers
 2026-09-17 15:02:15 - style(tailwind): swap custom colors for theme tokens
 2026-09-18 14:32:08 - fix(js): debounce resize handler to avoid layout recalcs
+2026-09-19 13:55:47 - fix(html): correct heading hierarchy on landing page
