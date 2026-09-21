@@ -132,3 +132,4 @@
 2026-09-19 13:55:47 - feat(css): implement fluid typography with clamp()
 2026-09-19 13:55:47 - fix(js): handle null state gracefully in form validation
 2026-09-19 13:55:47 - style(js): clean up console logs and debug statements
+2026-09-21 16:28:50 - chore(html): validate markup with htmlhint in CI
