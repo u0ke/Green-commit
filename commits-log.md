@@ -136,3 +136,4 @@
 2026-09-21 16:28:50 - feat(css): add smooth scroll behavior with offset for sticky header
 2026-09-21 16:28:50 - fix(js): resolve race condition in async data fetcher
 2026-09-22 14:56:36 - style(css): polish hover transitions for interactive cards
+2026-09-22 14:56:36 - feat(css): build animated underline effect for nav links
