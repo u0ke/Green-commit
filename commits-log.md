@@ -139,3 +139,4 @@
 2026-09-22 14:56:36 - feat(css): build animated underline effect for nav links
 2026-09-23 15:02:35 - feat(css): implement fluid typography with clamp()
 2026-09-23 15:02:35 - refactor(js): migrate callbacks to async/await in fetch helpers
+2026-09-23 15:02:35 - style(html): tighten line-height for better reading rhythm
