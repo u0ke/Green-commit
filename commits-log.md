@@ -140,3 +140,4 @@
 2026-09-23 15:02:35 - feat(css): implement fluid typography with clamp()
 2026-09-23 15:02:35 - refactor(js): migrate callbacks to async/await in fetch helpers
 2026-09-23 15:02:35 - style(html): tighten line-height for better reading rhythm
+2026-09-24 15:08:53 - perf(html): defer non-critical script loading for faster paint
